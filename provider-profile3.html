@@ -1,0 +1,486 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SkillConnect | Ayesha Khan Profile</title>
+
+        <link rel="stylesheet" href="provider-profile1.css">
+
+</head>
+
+<body>
+
+
+        <!-- =========================================
+         NAVBAR
+    ========================================= -->
+
+        <header class="navbar">
+
+                <div class="nav-container">
+
+                        <a href="index.html" class="logo">
+
+                                <span class="logo-icon">✕</span>
+
+                                <span>SkillConnect</span>
+
+                        </a>
+
+
+                        <nav class="nav-links">
+
+                                <a href="index.html">Home</a>
+
+                                <a href="services.html">Services</a>
+
+                                <a href="provider-profile1.html">Providers</a>
+
+                                <a href="about.html">About</a>
+
+                                <a href="blog.html">Blog</a>
+
+                                <a href="contact.html">Contact</a>
+
+                        </nav>
+
+
+                        <div class="nav-right">
+
+                                <button class="search-btn">
+                                        🔍
+                                </button>
+
+                                <button class="get-started" onclick="goToContact()">
+                                        Get Started
+                                </button>
+
+                        </div>
+
+
+                        <button class="menu-btn" onclick="toggleMenu()">
+                                ☰
+                        </button>
+
+                </div>
+
+        </header>
+
+
+
+        <!-- =========================================
+         PROFILE PAGE
+    ========================================= -->
+
+        <main class="profile-container">
+
+
+                <!-- =====================================
+             PROVIDER HEADER
+        ====================================== -->
+
+                <section class="profile-header">
+
+
+                        <!-- Provider Image -->
+
+                        <div class="profile-image-box">
+
+                                <img src="images/img.jpg" alt="Ayesha Khan" class="profile-image">
+
+                        </div>
+
+
+
+                        <!-- Provider Information -->
+
+                        <div class="provider-main-info">
+
+                                <div class="name-row">
+
+                                        <h1>
+                                                Ayesha Khan
+                                        </h1>
+
+                                        <span class="verified">
+                                                ✓ Verified
+                                        </span>
+
+                                </div>
+
+
+                                <p class="job-title">
+                                        UI/UX Designer
+                                </p>
+
+
+                                <div class="provider-meta">
+
+                                        <span>
+                                                ⭐ <strong>4.7</strong>
+                                                (38 reviews)
+                                        </span>
+
+                                        <span>
+                                                📍 Lahore, Pakistan
+                                        </span>
+
+                                        <span>
+                                                ◉ 3+ Years Experience
+                                        </span>
+
+                                </div>
+
+
+                                <div class="profile-buttons">
+
+                                        <button class="message-btn" onclick="sendMessage()">
+                                                Send Message
+                                        </button>
+
+                                        <button class="request-btn" onclick="requestService()">
+                                                Request Service
+                                        </button>
+
+                                </div>
+
+                        </div>
+
+                </section>
+
+
+
+                <!-- =====================================
+             PROFILE TABS
+        ====================================== -->
+
+                <div class="profile-tabs">
+
+                        <button class="tab-btn active" onclick="showTab('about', this)">
+                                About
+                        </button>
+
+                        <button class="tab-btn" onclick="showTab('services', this)">
+                                Services
+                        </button>
+
+                        <button class="tab-btn" onclick="showTab('reviews', this)">
+                                Reviews
+                        </button>
+
+                        <button class="tab-btn" onclick="showTab('portfolio', this)">
+                                Portfolio
+                        </button>
+
+                </div>
+
+
+
+                <!-- =====================================
+             ABOUT CONTENT
+        ====================================== -->
+
+                <section id="about" class="tab-content active-content">
+
+                        <div class="about-column">
+
+                                <h2>
+                                        About Me
+                                </h2>
+
+                                <p>
+                                        I am a creative UI/UX Designer with
+                                        3+ years of experience in designing
+                                        modern, user-friendly and visually
+                                        engaging digital experiences. I focus
+                                        on creating clean interfaces that are
+                                        easy and enjoyable to use.
+                                </p>
+
+
+                                <h2 class="service-heading">
+                                        Services I Offer
+                                </h2>
+
+                                <ul class="service-list">
+
+                                        <li>
+                                                ✓ Website UI Design
+                                        </li>
+
+                                        <li>
+                                                ✓ Mobile App UI Design
+                                        </li>
+
+                                        <li>
+                                                ✓ Wireframing & Prototyping
+                                        </li>
+
+                                        <li>
+                                                ✓ User Experience Design
+                                        </li>
+
+                                </ul>
+
+                        </div>
+
+
+
+                        <!-- Skills -->
+
+                        <div class="skills-column">
+
+                                <h2>
+                                        Skills
+                                </h2>
+
+                                <div class="skills-list">
+
+                                        <span>Figma</span>
+
+                                        <span>Adobe XD</span>
+
+                                        <span>UI Design</span>
+
+                                        <span>UX Research</span>
+
+                                        <span>Wireframing</span>
+
+                                        <span>Prototyping</span>
+
+                                </div>
+
+                        </div>
+
+                </section>
+
+
+
+                <!-- =====================================
+             SERVICES TAB
+        ====================================== -->
+
+                <section id="services" class="tab-content">
+
+                        <h2>
+                                Services
+                        </h2>
+
+
+                        <div class="service-cards">
+
+                                <div class="service-card">
+
+                                        <h3>Website UI Design</h3>
+
+                                        <p>
+                                                Modern and responsive website
+                                                interfaces with clean layouts.
+                                        </p>
+
+                                </div>
+
+
+                                <div class="service-card">
+
+                                        <h3>Mobile App Design</h3>
+
+                                        <p>
+                                                User-friendly mobile app
+                                                interfaces designed for
+                                                smooth experiences.
+                                        </p>
+
+                                </div>
+
+
+                                <div class="service-card">
+
+                                        <h3>UX Design</h3>
+
+                                        <p>
+                                                Simple and effective user
+                                                experiences based on user needs.
+                                        </p>
+
+                                </div>
+
+                        </div>
+
+                </section>
+
+
+
+                <!-- =====================================
+             REVIEWS TAB
+        ====================================== -->
+
+                <section id="reviews" class="tab-content">
+
+                        <h2>
+                                Client Reviews
+                        </h2>
+
+
+                        <div class="review-card">
+
+                                <div class="review-top">
+
+                                        <strong>
+                                                ⭐ 4.7
+                                        </strong>
+
+                                        <span>
+                                                38 reviews
+                                        </span>
+
+                                </div>
+
+                                <p>
+                                        "Ayesha created a clean and modern
+                                        interface that was easy to use."
+                                </p>
+
+                        </div>
+
+
+                        <div class="review-card">
+
+                                <div class="review-top">
+
+                                        <strong>
+                                                ⭐ 5.0
+                                        </strong>
+
+                                        <span>
+                                                Client Review
+                                        </span>
+
+                                </div>
+
+                                <p>
+                                        "Great UI/UX work with excellent
+                                        attention to detail and communication."
+                                </p>
+
+                        </div>
+
+                </section>
+
+
+
+                <!-- =====================================
+             PORTFOLIO TAB
+        ====================================== -->
+
+                <section id="portfolio" class="tab-content">
+
+                        <h2>
+                                Portfolio
+                        </h2>
+
+
+                        <div class="portfolio-grid">
+
+                                <div class="portfolio-item">
+                                        Website UI Design
+                                </div>
+
+                                <div class="portfolio-item">
+                                        Mobile App UI
+                                </div>
+
+                                <div class="portfolio-item">
+                                        UX Case Study
+                                </div>
+
+                        </div>
+
+                </section>
+
+        </main>
+
+
+
+        <!-- =========================================
+         FOOTER
+    ========================================= -->
+
+        <footer class="footer">
+
+                <div class="footer-content">
+
+                        <div>
+
+                                <h2>
+                                        SkillConnect
+                                </h2>
+
+                                <p>
+                                        Your Trusted Digital Services Marketplace
+                                </p>
+
+                        </div>
+
+
+                        <div>
+
+                                <h3>
+                                        Quick Links
+                                </h3>
+
+                                <a href="index.html">
+                                        Home
+                                </a>
+
+                                <a href="services.html">
+                                        Services
+                                </a>
+
+                                <a href="contact.html">
+                                        Contact
+                                </a>
+
+                        </div>
+
+
+                        <div>
+
+                                <h3>
+                                        Contact
+                                </h3>
+
+                                <p>
+                                        Lahore, Pakistan
+                                </p>
+
+                                <p>
+                                        support@skillconnect.com
+                                </p>
+
+                        </div>
+
+                </div>
+
+
+                <div class="footer-bottom">
+
+                        © 2026 SkillConnect. All rights reserved.
+
+                </div>
+
+        </footer>
+
+
+
+        <script src="provider-profile1.js"></script>
+
+</body>
+
+</html>

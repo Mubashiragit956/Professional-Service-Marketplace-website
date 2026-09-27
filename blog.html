@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SkillConnect | Blog</title>
+
+        <link rel="stylesheet" href="blog.css">
+
+</head>
+
+<body>
+
+
+        <!-- =========================================
+         NAVBAR
+    ========================================= -->
+
+        <header class="navbar">
+
+                <div class="nav-container">
+
+                        <!-- Logo -->
+
+                        <a href="index.html" class="logo">
+
+                                <span class="logo-icon">✕</span>
+
+                                <span>SkillConnect</span>
+
+                        </a>
+
+
+                        <!-- Navigation -->
+
+                        <nav class="nav-links">
+
+                                <a href="index.html">
+                                        Home
+                                </a>
+
+                                <a href="services.html">
+                                        Services
+                                </a>
+
+                                <a href="index.html#providers">
+                                        Providers
+                                </a>
+
+                                <a href="about.html">
+                                        About
+                                </a>
+
+                                <a href="blog.html" class="active">
+                                        Blog
+                                </a>
+
+                                <a href="contact.html">
+                                        Contact
+                                </a>
+
+                        </nav>
+
+
+                        <!-- Right Side -->
+
+                        <div class="nav-right">
+
+                                <button class="search-icon" onclick="focusSearch()">
+                                        🔍
+                                </button>
+
+                                <button class="get-started" onclick="getStarted()">
+                                        Get Started
+                                </button>
+
+                        </div>
+
+
+                        <!-- Mobile Menu -->
+
+                        <button class="menu-btn" onclick="toggleMenu()">
+                                ☰
+                        </button>
+
+                </div>
+
+        </header>
+
+
+
+        <!-- =========================================
+         BLOG HERO
+    ========================================= -->
+
+        <section class="blog-hero">
+
+                <div class="hero-content">
+
+                        <h1>Our Blog</h1>
+
+                        <p>
+                                Tips, trends and insights to help you grow
+                                in the digital world.
+                        </p>
+
+                </div>
+
+
+                <!--
+            BLOG HERO IMAGE
+
+            
+
+            src="images/blog-hero.jpg"
+        -->
+
+                <div class="hero-image">
+
+                        <img src="" alt="Our Blog">
+
+                </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+         BLOG CONTENT
+    ========================================= -->
+
+        <main class="blog-container">
+
+
+                <!-- Search -->
+
+                <div class="search-container">
+
+                        <input type="text" id="blogSearch" placeholder="Search articles...">
+
+                        <button onclick="searchBlogs()">
+                                🔍
+                        </button>
+
+                </div>
+
+
+
+                <!-- Categories -->
+
+                <div class="categories">
+
+                        <button class="category-btn active" data-category="all">
+                                All
+                        </button>
+
+                        <button class="category-btn" data-category="web">
+                                Web Development
+                        </button>
+
+                        <button class="category-btn" data-category="design">
+                                Design
+                        </button>
+
+                        <button class="category-btn" data-category="marketing">
+                                Marketing
+                        </button>
+
+                        <button class="category-btn" data-category="business">
+                                Business
+                        </button>
+
+                </div>
+
+
+
+                <!-- =========================================
+             BLOG GRID
+        ========================================= -->
+
+                <div class="blog-grid" id="blogGrid">
+
+
+                        <!-- Blog 1 -->
+
+                        <article class="blog-card" data-category="web">
+
+                                <img src="images/hero.png.jpeg" alt="Web Development Trends" class="blog-image">
+
+                                <div class="blog-content">
+
+                                        <span class="blog-category">
+                                                Web Development
+                                        </span>
+
+                                        <h2>
+                                                10 Web Development Trends in 2025
+                                        </h2>
+
+                                        <p class="blog-date">
+                                                May 14, 2025
+                                        </p>
+
+                                        <button class="read-more" onclick="readArticle(
+                            '10 Web Development Trends in 2025'
+                        )">
+                                                Read More →
+                                        </button>
+
+                                </div>
+
+                        </article>
+
+
+
+                        <!-- Blog 2 -->
+
+                        <article class="blog-card" data-category="design">
+
+                                <img src="images/laptop.jpg" alt="UI UX Design Tips" class="blog-image">
+
+                                <div class="blog-content">
+
+                                        <span class="blog-category">
+                                                Design
+                                        </span>
+
+                                        <h2>
+                                                UI/UX Design Tips for a Better User Experience
+                                        </h2>
+
+                                        <p class="blog-date">
+                                                May 8, 2025
+                                        </p>
+
+                                        <button class="read-more" onclick="readArticle(
+                            'UI/UX Design Tips for a Better User Experience'
+                        )">
+                                                Read More →
+                                        </button>
+
+                                </div>
+
+                        </article>
+
+
+
+                        <!-- Blog 3 -->
+
+                        <article class="blog-card" data-category="marketing">
+
+                                <img src="images/about.png.jpeg" alt="SEO Strategies" class="blog-image">
+
+                                <div class="blog-content">
+
+                                        <span class="blog-category">
+                                                Marketing
+                                        </span>
+
+                                        <h2>
+                                                SEO Strategies to Boost Your Website Traffic
+                                        </h2>
+
+                                        <p class="blog-date">
+                                                May 5, 2025
+                                        </p>
+
+                                        <button class="read-more" onclick="readArticle(
+                            'SEO Strategies to Boost Your Website Traffic'
+                        )">
+                                                Read More →
+                                        </button>
+
+                                </div>
+
+                        </article>
+
+
+
+                        <!-- Blog 4 -->
+
+                        <article class="blog-card" data-category="business">
+
+                                <img src="images/img 8.jpg" alt="Choosing Provider" class="blog-image">
+
+                                <div class="blog-content">
+
+                                        <span class="blog-category">
+                                                Business
+                                        </span>
+
+                                        <h2>
+                                                How to Choose the Right Freelancer
+                                        </h2>
+
+                                        <p class="blog-date">
+                                                May 2, 2025
+                                        </p>
+
+                                        <button class="read-more" onclick="readArticle(
+                            'How to Choose the Right Freelancer'
+                        )">
+                                                Read More →
+                                        </button>
+
+                                </div>
+
+                        </article>
+
+                </div>
+
+
+                <!-- No Result Message -->
+
+                <p id="noResults" class="no-results">
+                        No articles found.
+                </p>
+
+        </main>
+
+
+
+        <!-- =========================================
+         FOOTER
+    ========================================= -->
+
+        <footer class="main-footer">
+
+                <div class="footer-container">
+
+
+                        <!-- Brand -->
+
+                        <div class="footer-brand">
+
+                                <div class="footer-logo">
+
+                                        <span class="footer-icon">
+                                                ✕
+                                        </span>
+
+                                        SkillConnect
+
+                                </div>
+
+                                <p>
+                                        Your Trusted Digital Services Marketplace
+                                </p>
+
+                        </div>
+
+
+
+                        <!-- Quick Links -->
+
+                        <div class="footer-column">
+
+                                <h3>Quick Links</h3>
+
+                                <a href="index.html">
+                                        Home
+                                </a>
+
+                                <a href="services.html">
+                                        Services
+                                </a>
+
+                                <a href="index.html#providers">
+                                        Providers
+                                </a>
+
+                                <a href="about.html">
+                                        About
+                                </a>
+
+                                <a href="blog.html">
+                                        Blog
+                                </a>
+
+                                <a href="index.html#contact">
+                                        Contact
+                                </a>
+
+                        </div>
+
+
+
+                        <!-- Services -->
+
+                        <div class="footer-column">
+
+                                <h3>Services</h3>
+
+                                <a href="services.html">
+                                        Web Development
+                                </a>
+
+                                <a href="services.html">
+                                        Graphic Design
+                                </a>
+
+                                <a href="services.html">
+                                        UI/UX Design
+                                </a>
+
+                                <a href="services.html">
+                                        Digital Marketing
+                                </a>
+
+                                <a href="services.html">
+                                        Content Writing
+                                </a>
+
+                                <a href="services.html">
+                                        Python Development
+                                </a>
+
+                                <a href="services.html">
+                                        SEO
+                                </a>
+
+                        </div>
+
+
+
+                        <!-- Contact -->
+
+                        <div class="footer-column">
+
+                                <h3>Contact Us</h3>
+
+                                <p>📍 Lahore, Pakistan</p>
+
+                                <p>📞 +92 300 0000007</p>
+
+                                <p>✉ support@skillconnect.com</p>
+
+                        </div>
+
+                </div>
+
+
+
+                <!-- Footer Bottom -->
+
+                <div class="footer-bottom">
+
+                        <p>
+                                © 2026 SkillConnect. All rights reserved.
+                        </p>
+
+                        <div>
+
+                                <a href="#">
+                                        Privacy Policy
+                                </a>
+
+                                <span>|</span>
+
+                                <a href="#">
+                                        Terms & Conditions
+                                </a>
+
+                        </div>
+
+                </div>
+
+        </footer>
+
+
+        <script src="blog.js"></script>
+
+</body>
+
+</html>

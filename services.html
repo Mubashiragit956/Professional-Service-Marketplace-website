@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SkillConnect | Services</title>
+
+        <!-- Services CSS -->
+        <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+
+        <!-- =========================================
+         NAVBAR
+    ========================================= -->
+
+        <header class="navbar">
+
+                <div class="nav-container">
+
+                        <!-- Logo -->
+                        <a href="index.html" class="logo">
+                                <span class="logo-icon">✕</span>
+                                <span>SkillConnect</span>
+                        </a>
+
+
+                        <!-- Navigation -->
+                        <nav class="nav-links">
+
+                                <a href="index.html">Home</a>
+
+                                <a href="services.html" class="active">
+                                        Services
+                                </a>
+
+                                <a href="index.html#providers">
+                                        Providers
+                                </a>
+
+                                <a href="index.html#about">
+                                        About
+                                </a>
+
+                                <a href="#">
+                                        Blog
+                                </a>
+
+                                <a href="index.html#contact">
+                                        Contact
+                                </a>
+
+                        </nav>
+
+
+                        <!-- Right Side -->
+                        <div class="nav-right">
+
+                                <button class="search-icon" onclick="focusSearch()">
+                                        🔍
+                                </button>
+
+                                <button class="get-started" onclick="getStarted()">
+                                        Get Started
+                                </button>
+
+                        </div>
+
+
+                        <!-- Mobile Menu -->
+                        <button class="menu-btn" onclick="toggleMenu()">
+                                ☰
+                        </button>
+
+                </div>
+
+        </header>
+
+
+
+        <!-- =========================================
+         HERO SECTION
+    ========================================= -->
+
+        <section class="services-hero">
+
+                <div class="hero-content">
+
+                        <h1>Our Services</h1>
+
+                        <p>
+                                Find skilled professionals for web development,
+                                design, marketing and more. Turn your ideas into
+                                reality with expert support.
+                        </p>
+
+                </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+         SEARCH + CATEGORY SECTION
+    ========================================= -->
+
+        <section class="search-section">
+
+                <!-- Search -->
+                <div class="search-box">
+
+                        <input type="text" id="serviceSearch" placeholder="Search services...">
+
+                        <button onclick="searchServices()">
+                                🔍
+                                <span>Search</span>
+                        </button>
+
+                </div>
+
+
+                <!-- Category Buttons -->
+                <div class="category-buttons">
+
+                        <button class="category-btn active" data-category="all">
+                                All
+                        </button>
+
+                        <button class="category-btn" data-category="development">
+                                &lt;/&gt; Development
+                        </button>
+
+                        <button class="category-btn" data-category="design">
+                                🎨 Design
+                        </button>
+
+                        <button class="category-btn" data-category="marketing">
+                                📣 Marketing
+                        </button>
+
+                        <button class="category-btn" data-category="writing">
+                                ✎ Writing
+                        </button>
+
+                        <button class="category-btn" data-category="python">
+                                🐍 Python
+                        </button>
+
+                        <button class="category-btn" data-category="seo">
+                                🔍 SEO
+                        </button>
+
+                </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+         SERVICES AREA
+    ========================================= -->
+
+        <main class="services-area">
+
+
+                <!-- =====================================
+             FILTER SIDEBAR
+        ====================================== -->
+
+                <aside class="filter-sidebar">
+
+                        <h2>☰ Filter By</h2>
+
+
+                        <!-- Service Category -->
+
+                        <div class="filter-group">
+
+                                <h3>Service Category</h3>
+
+                                <label>
+                                        <input type="radio" name="service-category" value="all" checked>
+                                        All Categories
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="service-category" value="development">
+                                        Web Development
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="service-category" value="design">
+                                        Graphic Design
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="service-category" value="uiux">
+                                        UI/UX Design
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="service-category" value="marketing">
+                                        Digital Marketing
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="service-category" value="writing">
+                                        Content Writing
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="service-category" value="python">
+                                        Python Development
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="service-category" value="seo">
+                                        SEO
+                                </label>
+
+                        </div>
+
+
+                        <!-- Price Range -->
+
+                        <div class="filter-group price-group">
+
+                                <h3>Price Range</h3>
+
+                                <label>
+                                        <input type="radio" name="price" value="all" checked>
+                                        Any Price
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="price" value="0-50">
+                                        $0 - $50
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="price" value="50-100">
+                                        $50 - $100
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="price" value="100-200">
+                                        $100 - $200
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="price" value="200">
+                                        $200+
+                                </label>
+
+                        </div>
+
+
+                        <!-- Clear Button -->
+
+                        <button class="clear-filter" onclick="clearFilters()">
+                                ↻ Clear Filters
+                        </button>
+
+                </aside>
+
+
+
+                <!-- =====================================
+             FEATURED SERVICES
+        ====================================== -->
+
+                <section class="featured-services">
+
+                        <div class="services-title">
+
+                                <h2>★ Featured Services</h2>
+
+                                <a href="#">
+                                        View All Services →
+                                </a>
+
+                        </div>
+
+
+                        <div class="services-grid">
+
+
+                                <!-- Service 1 -->
+
+                                <div class="service-card" data-category="development" data-price="50">
+
+                                        <div class="service-icon blue">
+                                                &lt;/&gt;
+                                        </div>
+
+                                        <h3>Web Development</h3>
+
+                                        <p>
+                                                Build responsive and modern websites,
+                                                web apps and e-commerce solutions.
+                                        </p>
+
+                                        <div class="service-price">
+                                                Starting from <strong>$50</strong>
+                                        </div>
+
+                                        <button onclick="viewService('Web Development')">
+                                                View Details →
+                                        </button>
+
+                                </div>
+
+
+
+                                <!-- Service 2 -->
+
+                                <div class="service-card" data-category="design" data-price="20">
+
+                                        <div class="service-icon pink">
+                                                🎨
+                                        </div>
+
+                                        <h3>Graphic Design</h3>
+
+                                        <p>
+                                                Create professional and unique designs
+                                                for your brand, social media and marketing.
+                                        </p>
+
+                                        <div class="service-price">
+                                                Starting from <strong>$20</strong>
+                                        </div>
+
+                                        <button onclick="viewService('Graphic Design')">
+                                                View Details →
+                                        </button>
+
+                                </div>
+
+
+
+                                <!-- Service 3 -->
+
+                                <div class="service-card" data-category="uiux" data-price="40">
+
+                                        <div class="service-icon purple">
+                                                ▣
+                                        </div>
+
+                                        <h3>UI/UX Design</h3>
+
+                                        <p>
+                                                Design user-friendly and modern interfaces
+                                                for better user experiences.
+                                        </p>
+
+                                        <div class="service-price">
+                                                Starting from <strong>$40</strong>
+                                        </div>
+
+                                        <button onclick="viewService('UI/UX Design')">
+                                                View Details →
+                                        </button>
+
+                                </div>
+
+
+
+                                <!-- Service 4 -->
+
+                                <div class="service-card" data-category="marketing" data-price="15">
+
+                                        <div class="service-icon green">
+                                                📣
+                                        </div>
+
+                                        <h3>Digital Marketing</h3>
+
+                                        <p>
+                                                Boost your online presence and reach more
+                                                customers with smart strategies.
+                                        </p>
+
+                                        <div class="service-price">
+                                                Starting from <strong>$15</strong>
+                                        </div>
+
+                                        <button onclick="viewService('Digital Marketing')">
+                                                View Details →
+                                        </button>
+
+                                </div>
+
+
+
+                                <!-- Service 5 -->
+
+                                <div class="service-card" data-category="writing" data-price="25">
+
+                                        <div class="service-icon violet">
+                                                ✎
+                                        </div>
+
+                                        <h3>Content Writing</h3>
+
+                                        <p>
+                                                SEO-friendly content for blogs, websites
+                                                and social media, created to engage.
+                                        </p>
+
+                                        <div class="service-price">
+                                                Starting from <strong>$25</strong>
+                                        </div>
+
+                                        <button onclick="viewService('Content Writing')">
+                                                View Details →
+                                        </button>
+
+                                </div>
+
+
+
+                                <!-- Service 6 -->
+
+                                <div class="service-card" data-category="python" data-price="60">
+
+                                        <div class="service-icon blue">
+                                                🐍
+                                        </div>
+
+                                        <h3>Python Development</h3>
+
+                                        <p>
+                                                Build efficient and scalable applications,
+                                                automation scripts and data solutions.
+                                        </p>
+
+                                        <div class="service-price">
+                                                Starting from <strong>$60</strong>
+                                        </div>
+
+                                        <button onclick="viewService('Python Development')">
+                                                View Details →
+                                        </button>
+
+                                </div>
+
+
+
+                                <!-- Service 7 -->
+
+                                <div class="service-card" data-category="seo" data-price="40">
+
+                                        <div class="service-icon teal">
+                                                🔍
+                                        </div>
+
+                                        <h3>SEO</h3>
+
+                                        <p>
+                                                Improve your website ranking and get more
+                                                organic traffic.
+                                        </p>
+
+                                        <div class="service-price">
+                                                Starting from <strong>$40</strong>
+                                        </div>
+
+                                        <button onclick="viewService('SEO')">
+                                                View Details →
+                                        </button>
+
+                                </div>
+
+                        </div>
+
+                </section>
+
+        </main>
+
+
+
+        <!-- =========================================
+         FOOTER
+    ========================================= -->
+
+        <footer class="services-footer">
+
+                <div class="footer-content">
+
+                        <div>
+                                <div class="footer-logo">
+                                        <span>✕</span>
+                                        SkillConnect
+                                </div>
+
+                                <p>
+                                        Your Trusted Digital Services Marketplace
+                                </p>
+                        </div>
+
+
+                        <div class="footer-column">
+
+                                <h3>Quick Links</h3>
+
+                                <a href="index.html">Home</a>
+                                <a href="services.html">Services</a>
+                                <a href="index.html#providers">Providers</a>
+                                <a href="index.html#about">About</a>
+                                <a href="#">Contact</a>
+
+                        </div>
+
+
+                        <div class="footer-column">
+
+                                <h3>Services</h3>
+
+                                <a href="#">Web Development</a>
+                                <a href="#">Graphic Design</a>
+                                <a href="#">UI/UX Design</a>
+                                <a href="#">Digital Marketing</a>
+                                <a href="#">Content Writing</a>
+                                <a href="#">Python Development</a>
+                                <a href="#">SEO</a>
+
+                        </div>
+
+
+                        <div class="footer-column">
+
+                                <h3>Contact Us</h3>
+
+                                <p>📍 Lahore, Pakistan</p>
+                                <p>📞 +92 300 0000007</p>
+                                <p>✉ support@skillconnect.com</p>
+
+                        </div>
+
+                </div>
+
+
+                <div class="footer-bottom">
+
+                        <p>
+                                © 2026 SkillConnect. All rights reserved.
+                        </p>
+
+                        <div>
+                                <a href="#">Privacy Policy</a>
+                                <span>|</span>
+                                <a href="#">Terms & Conditions</a>
+                        </div>
+
+                </div>
+
+        </footer>
+
+
+        <!-- JavaScript -->
+        <script src="services.js"></script>
+
+</body>
+
+</html>

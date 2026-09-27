@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SkillConnect | Ali Raza Profile</title>
+
+        <link rel="stylesheet" href="provider-profile1.css">
+
+</head>
+
+<body>
+
+
+        <!-- =========================================
+         NAVBAR
+    ========================================= -->
+
+        <header class="navbar">
+
+                <div class="nav-container">
+
+                        <a href="index.html" class="logo">
+
+                                <span class="logo-icon">✕</span>
+
+                                <span>SkillConnect</span>
+
+                        </a>
+
+
+                        <nav class="nav-links">
+
+                                <a href="index.html">Home</a>
+
+                                <a href="services.html">Services</a>
+
+                                <a href="provider-profile1.html">Providers</a>
+
+                                <a href="about.html">About</a>
+
+                                <a href="blog.html">Blog</a>
+
+                                <a href="contact.html">Contact</a>
+
+                        </nav>
+
+
+                        <div class="nav-right">
+
+                                <button class="search-btn">
+                                        🔍
+                                </button>
+
+                                <button class="get-started" onclick="goToContact()">
+                                        Get Started
+                                </button>
+
+                        </div>
+
+
+                        <button class="menu-btn" onclick="toggleMenu()">
+                                ☰
+                        </button>
+
+                </div>
+
+        </header>
+
+
+
+        <!-- =========================================
+         PROFILE PAGE
+    ========================================= -->
+
+        <main class="profile-container">
+
+
+                <!-- =====================================
+             PROVIDER HEADER
+        ====================================== -->
+
+                <section class="profile-header">
+
+
+                        <!-- Provider Image -->
+
+                        <div class="profile-image-box">
+
+                                <img src="images/provider2.jpg" alt="Ali Raza" class="profile-image">
+
+                        </div>
+
+
+
+                        <!-- Provider Information -->
+
+                        <div class="provider-main-info">
+
+                                <div class="name-row">
+
+                                        <h1>
+                                                Ali Raza
+                                        </h1>
+
+                                        <span class="verified">
+                                                ✓ Verified
+                                        </span>
+
+                                </div>
+
+
+                                <p class="job-title">
+                                        Graphic Designer
+                                </p>
+
+
+                                <div class="provider-meta">
+
+                                        <span>
+                                                ⭐ <strong>4.8</strong>
+                                                (32 reviews)
+                                        </span>
+
+                                        <span>
+                                                📍 Lahore, Pakistan
+                                        </span>
+
+                                        <span>
+                                                ◉ 3+ Years Experience
+                                        </span>
+
+                                </div>
+
+
+                                <div class="profile-buttons">
+
+                                        <button class="message-btn" onclick="sendMessage()">
+                                                Send Message
+                                        </button>
+
+                                        <button class="request-btn" onclick="requestService()">
+                                                Request Service
+                                        </button>
+
+                                </div>
+
+                        </div>
+
+                </section>
+
+
+
+                <!-- =====================================
+             PROFILE TABS
+        ====================================== -->
+
+                <div class="profile-tabs">
+
+                        <button class="tab-btn active" onclick="showTab('about', this)">
+                                About
+                        </button>
+
+                        <button class="tab-btn" onclick="showTab('services', this)">
+                                Services
+                        </button>
+
+                        <button class="tab-btn" onclick="showTab('reviews', this)">
+                                Reviews
+                        </button>
+
+                        <button class="tab-btn" onclick="showTab('portfolio', this)">
+                                Portfolio
+                        </button>
+
+                </div>
+
+
+
+                <!-- =====================================
+             ABOUT CONTENT
+        ====================================== -->
+
+                <section id="about" class="tab-content active-content">
+
+                        <div class="about-column">
+
+                                <h2>
+                                        About Me
+                                </h2>
+
+                                <p>
+                                        I am a creative Graphic Designer with
+                                        3+ years of experience in creating
+                                        professional and visually appealing
+                                        designs. I focus on turning ideas into
+                                        attractive and meaningful visual designs.
+                                </p>
+
+
+                                <h2 class="service-heading">
+                                        Services I Offer
+                                </h2>
+
+                                <ul class="service-list">
+
+                                        <li>
+                                                ✓ Logo Design
+                                        </li>
+
+                                        <li>
+                                                ✓ Social Media Designs
+                                        </li>
+
+                                        <li>
+                                                ✓ Branding Design
+                                        </li>
+
+                                        <li>
+                                                ✓ Poster & Banner Design
+                                        </li>
+
+                                </ul>
+
+                        </div>
+
+
+
+                        <!-- Skills -->
+
+                        <div class="skills-column">
+
+                                <h2>
+                                        Skills
+                                </h2>
+
+                                <div class="skills-list">
+
+                                        <span>Adobe Photoshop</span>
+
+                                        <span>Adobe Illustrator</span>
+
+                                        <span>Figma</span>
+
+                                        <span>Canva</span>
+
+                                        <span>Branding</span>
+
+                                        <span>UI Design</span>
+
+                                </div>
+
+                        </div>
+
+                </section>
+
+
+
+                <!-- =====================================
+             SERVICES TAB
+        ====================================== -->
+
+                <section id="services" class="tab-content">
+
+                        <h2>
+                                Services
+                        </h2>
+
+                        <div class="service-cards">
+
+                                <div class="service-card">
+
+                                        <h3>Logo Design</h3>
+
+                                        <p>
+                                                Creative and professional
+                                                logos for businesses and brands.
+                                        </p>
+
+                                </div>
+
+
+                                <div class="service-card">
+
+                                        <h3>Social Media Design</h3>
+
+                                        <p>
+                                                Attractive social media posts
+                                                and graphics for your brand.
+                                        </p>
+
+                                </div>
+
+
+                                <div class="service-card">
+
+                                        <h3>Branding Design</h3>
+
+                                        <p>
+                                                Complete visual branding designs
+                                                to give your business a professional identity.
+                                        </p>
+
+                                </div>
+
+                        </div>
+
+                </section>
+
+
+
+                <!-- =====================================
+             REVIEWS TAB
+        ====================================== -->
+
+                <section id="reviews" class="tab-content">
+
+                        <h2>
+                                Client Reviews
+                        </h2>
+
+
+                        <div class="review-card">
+
+                                <div class="review-top">
+
+                                        <strong>
+                                                ⭐ 4.8
+                                        </strong>
+
+                                        <span>
+                                                32 reviews
+                                        </span>
+
+                                </div>
+
+                                <p>
+                                        "Creative designs, professional work
+                                        and great attention to detail."
+                                </p>
+
+                        </div>
+
+
+                        <div class="review-card">
+
+                                <div class="review-top">
+
+                                        <strong>
+                                                ⭐ 5.0
+                                        </strong>
+
+                                        <span>
+                                                Client Review
+                                        </span>
+
+                                </div>
+
+                                <p>
+                                        "Ali delivered a clean and attractive
+                                        design exactly according to our requirements."
+                                </p>
+
+                        </div>
+
+                </section>
+
+
+
+                <!-- =====================================
+             PORTFOLIO TAB
+        ====================================== -->
+
+                <section id="portfolio" class="tab-content">
+
+                        <h2>
+                                Portfolio
+                        </h2>
+
+
+                        <div class="portfolio-grid">
+
+                                <div class="portfolio-item">
+                                        Logo Design
+                                </div>
+
+                                <div class="portfolio-item">
+                                        Brand Identity
+                                </div>
+
+                                <div class="portfolio-item">
+                                        Social Media Design
+                                </div>
+
+                        </div>
+
+                </section>
+
+        </main>
+
+
+
+        <!-- =========================================
+         FOOTER
+    ========================================= -->
+
+        <footer class="footer">
+
+                <div class="footer-content">
+
+                        <div>
+
+                                <h2>
+                                        SkillConnect
+                                </h2>
+
+                                <p>
+                                        Your Trusted Digital Services Marketplace
+                                </p>
+
+                        </div>
+
+
+                        <div>
+
+                                <h3>
+                                        Quick Links
+                                </h3>
+
+                                <a href="index.html">
+                                        Home
+                                </a>
+
+                                <a href="services.html">
+                                        Services
+                                </a>
+
+                                <a href="contact.html">
+                                        Contact
+                                </a>
+
+                        </div>
+
+
+                        <div>
+
+                                <h3>
+                                        Contact
+                                </h3>
+
+                                <p>
+                                        Lahore, Pakistan
+                                </p>
+
+                                <p>
+                                        support@skillconnect.com
+                                </p>
+
+                        </div>
+
+                </div>
+
+
+                <div class="footer-bottom">
+
+                        © 2026 SkillConnect. All rights reserved.
+
+                </div>
+
+        </footer>
+
+
+
+        <script src="provider-profile1.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,801 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+html {
+        scroll-behavior: smooth;
+}
+
+body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f7fbff;
+        color: #17396e;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+        height: 74px;
+        background: #061b3d;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+}
+
+.nav-container {
+        max-width: 1450px;
+        height: 100%;
+        margin: auto;
+        padding: 0 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+
+/* Logo */
+
+.logo {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+
+        color: white;
+        text-decoration: none;
+
+        font-size: 21px;
+        font-weight: 700;
+}
+
+.logo-icon {
+        width: 30px;
+        height: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #2878ff;
+        border-radius: 8px;
+
+        font-size: 18px;
+}
+
+
+/* Navigation */
+
+.nav-links {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+}
+
+.nav-links a {
+        color: #dbe6f7;
+        text-decoration: none;
+
+        font-size: 14px;
+
+        padding: 28px 0;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+        color: white;
+}
+
+.nav-links a.active {
+        border-bottom: 3px solid #3182ff;
+}
+
+
+/* Right */
+
+.nav-right {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+}
+
+.search-btn {
+        background: transparent;
+        border: none;
+        color: white;
+
+        font-size: 17px;
+
+        cursor: pointer;
+}
+
+.get-started {
+        border: none;
+
+        background: #2878ff;
+        color: white;
+
+        padding: 11px 23px;
+
+        border-radius: 7px;
+
+        font-weight: 600;
+
+        cursor: pointer;
+}
+
+.get-started:hover {
+        background: #1769e8;
+}
+
+
+/* Mobile */
+
+.menu-btn {
+        display: none;
+
+        background: transparent;
+        border: none;
+
+        color: white;
+
+        font-size: 25px;
+
+        cursor: pointer;
+}
+
+
+/* =========================================
+   CONTACT HERO
+========================================= */
+
+.contact-hero {
+        max-width: 1450px;
+
+        height: 245px;
+
+        margin: 25px auto;
+
+        padding: 30px 45px;
+
+        border-radius: 10px;
+
+        background: linear-gradient(100deg,
+                        #073777,
+                        #1769c9);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        overflow: hidden;
+}
+
+.hero-text {
+        width: 50%;
+        color: white;
+}
+
+.hero-text h1 {
+        font-size: 38px;
+
+        margin-bottom: 12px;
+}
+
+.hero-text p {
+        max-width: 510px;
+
+        font-size: 14px;
+
+        line-height: 1.6;
+}
+
+.hero-image {
+        width: 47%;
+        height: 215px;
+}
+
+.hero-image img {
+        width: 100%;
+        height: 215px;
+
+        object-fit: cover;
+
+        border-radius: 8px;
+}
+
+
+/* =========================================
+   MAIN CONTACT CONTAINER
+========================================= */
+
+.contact-container {
+        max-width: 1100px;
+
+        margin: auto;
+
+        padding: 5px 30px 50px;
+}
+
+
+/* =========================================
+   CONTACT GRID
+========================================= */
+
+.contact-grid {
+        display: grid;
+
+        grid-template-columns: 42% 58%;
+
+        gap: 18px;
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.contact-info {
+        background: white;
+
+        border: 1px solid #dceaff;
+
+        border-radius: 9px;
+
+        padding: 25px 22px;
+
+        box-shadow:
+                0 5px 18px rgba(35, 102, 180, .06);
+}
+
+.info-item {
+        display: flex;
+
+        align-items: center;
+
+        gap: 15px;
+
+        padding: 14px 0;
+
+        border-bottom: 1px solid #edf3fb;
+}
+
+.info-item:last-child {
+        border-bottom: none;
+}
+
+.info-icon {
+        min-width: 38px;
+        height: 38px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #e9f2ff;
+
+        border-radius: 50%;
+
+        font-size: 16px;
+}
+
+.info-item h3 {
+        font-size: 13px;
+
+        color: #17396e;
+
+        margin-bottom: 5px;
+}
+
+.info-item p {
+        font-size: 11px;
+
+        color: #7188a5;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.contact-form-section {
+        background: white;
+
+        border: 1px solid #dceaff;
+
+        border-radius: 9px;
+
+        padding: 23px 25px;
+
+        box-shadow:
+                0 5px 18px rgba(35, 102, 180, .06);
+}
+
+.contact-form-section h2 {
+        color: #1769ff;
+
+        font-size: 20px;
+
+        margin-bottom: 5px;
+}
+
+.form-intro {
+        color: #7890ae;
+
+        font-size: 11px;
+
+        margin-bottom: 15px;
+}
+
+
+/* Form Group */
+
+.form-group {
+        margin-bottom: 12px;
+}
+
+.form-group label {
+        display: block;
+
+        color: #38577d;
+
+        font-size: 11px;
+
+        font-weight: 600;
+
+        margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+        width: 100%;
+
+        border: 1px solid #dce8f7;
+
+        background: #fbfdff;
+
+        border-radius: 6px;
+
+        outline: none;
+
+        padding: 10px 12px;
+
+        color: #294d78;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 11px;
+
+        transition: .2s;
+}
+
+.form-group input {
+        height: 36px;
+}
+
+.form-group textarea {
+        resize: vertical;
+
+        min-height: 75px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+        border-color: #2878ff;
+
+        box-shadow:
+                0 0 0 2px rgba(40, 120, 255, .08);
+}
+
+
+/* Error */
+
+.form-group small {
+        display: block;
+
+        color: #e74c3c;
+
+        font-size: 9px;
+
+        margin-top: 3px;
+}
+
+
+/* Send Button */
+
+.send-btn {
+        width: 100%;
+
+        border: none;
+
+        background: #5751e8;
+
+        color: white;
+
+        padding: 10px;
+
+        border-radius: 6px;
+
+        font-size: 11px;
+
+        font-weight: 600;
+
+        cursor: pointer;
+
+        margin-top: 3px;
+}
+
+.send-btn:hover {
+        background: #4640d7;
+}
+
+
+/* Success */
+
+.success-message {
+        text-align: center;
+
+        color: #159447;
+
+        font-size: 11px;
+
+        font-weight: 600;
+
+        margin-top: 10px;
+}
+
+
+/* =========================================
+   MAP
+========================================= */
+
+.map-section {
+        position: relative;
+
+        height: 230px;
+
+        margin-top: 20px;
+
+        background: #e8f1f8;
+
+        border: 1px solid #dceaff;
+
+        border-radius: 9px;
+
+        overflow: hidden;
+}
+
+
+/* Map Image */
+
+.map-image {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+
+        background:
+                linear-gradient(120deg,
+                        #edf5fa,
+                        #dbe9f2);
+}
+
+
+/* Map Label */
+
+.map-label {
+        position: absolute;
+
+        left: 20px;
+        bottom: 20px;
+
+        background: white;
+
+        padding: 9px 13px;
+
+        border-radius: 6px;
+
+        box-shadow:
+                0 4px 15px rgba(0, 0, 0, .12);
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 7px;
+
+        font-size: 10px;
+
+        color: #31527a;
+}
+
+.map-label strong {
+        color: #1769ff;
+}
+
+.map-pin {
+        font-size: 14px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.main-footer {
+        background: #061b3d;
+
+        color: white;
+
+        margin-top: 25px;
+}
+
+.footer-container {
+        max-width: 1450px;
+
+        margin: auto;
+
+        padding: 42px 35px 32px;
+
+        display: grid;
+
+        grid-template-columns:
+                1.5fr 1fr 1.3fr 1.2fr;
+
+        gap: 35px;
+}
+
+
+/* Footer Logo */
+
+.footer-logo {
+        display: flex;
+
+        align-items: center;
+
+        gap: 9px;
+
+        font-size: 20px;
+
+        font-weight: 700;
+}
+
+.footer-icon {
+        width: 30px;
+        height: 30px;
+
+        background: #2878ff;
+
+        border-radius: 7px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.footer-brand p {
+        color: #c8d8ef;
+
+        font-size: 13px;
+
+        margin-top: 11px;
+}
+
+
+/* Footer Columns */
+
+.footer-column {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 9px;
+}
+
+.footer-column h3 {
+        font-size: 16px;
+
+        margin-bottom: 7px;
+}
+
+.footer-column a,
+.footer-column p {
+        color: #c8d8ef;
+
+        text-decoration: none;
+
+        font-size: 13px;
+}
+
+.footer-column a:hover {
+        color: white;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+        max-width: 1380px;
+
+        margin: auto;
+
+        padding: 15px 35px;
+
+        border-top: 1px solid rgba(255, 255, 255, .12);
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        color: #c8d8ef;
+
+        font-size: 12px;
+}
+
+.footer-bottom div {
+        display: flex;
+
+        gap: 12px;
+}
+
+.footer-bottom a {
+        color: #c8d8ef;
+
+        text-decoration: none;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+        .contact-hero {
+                margin-left: 20px;
+                margin-right: 20px;
+        }
+
+        .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+        }
+
+}
+
+
+/* =========================================
+   MOBILE NAV + CONTACT
+========================================= */
+
+@media (max-width: 750px) {
+
+        .nav-links {
+                display: none;
+
+                position: absolute;
+
+                top: 74px;
+                left: 0;
+
+                width: 100%;
+
+                background: #061b3d;
+
+                flex-direction: column;
+
+                padding: 12px 25px;
+
+                gap: 0;
+        }
+
+        .nav-links.show {
+                display: flex;
+        }
+
+        .nav-links a {
+                width: 100%;
+
+                padding: 13px 0;
+        }
+
+        .nav-right {
+                display: none;
+        }
+
+        .menu-btn {
+                display: block;
+        }
+
+
+        .contact-hero {
+                height: auto;
+
+                min-height: 390px;
+
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                padding: 30px;
+        }
+
+        .hero-text {
+                width: 100%;
+        }
+
+        .hero-text h1 {
+                font-size: 32px;
+        }
+
+        .hero-image {
+                width: 100%;
+
+                height: 180px;
+
+                margin-top: 20px;
+        }
+
+        .hero-image img {
+                height: 180px;
+        }
+
+
+        .contact-grid {
+                grid-template-columns: 1fr;
+        }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+        .nav-container {
+                padding: 0 18px;
+        }
+
+        .logo {
+                font-size: 19px;
+        }
+
+        .contact-hero {
+                margin: 15px;
+
+                padding: 28px 22px;
+        }
+
+        .contact-container {
+                padding-left: 18px;
+                padding-right: 18px;
+        }
+
+        .footer-container {
+                grid-template-columns: 1fr;
+
+                padding: 35px 25px;
+        }
+
+        .footer-bottom {
+                flex-direction: column;
+
+                gap: 12px;
+
+                text-align: center;
+        }
+
+}

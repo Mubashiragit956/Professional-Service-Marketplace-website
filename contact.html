@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SkillConnect | Contact Us</title>
+
+        <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+
+
+        <!-- =========================================
+         NAVBAR
+    ========================================= -->
+
+        <header class="navbar">
+
+                <div class="nav-container">
+
+                        <!-- Logo -->
+
+                        <a href="index.html" class="logo">
+
+                                <span class="logo-icon">✕</span>
+
+                                <span>SkillConnect</span>
+
+                        </a>
+
+
+                        <!-- Navigation -->
+
+                        <nav class="nav-links">
+
+                                <a href="index.html">
+                                        Home
+                                </a>
+
+                                <a href="services.html">
+                                        Services
+                                </a>
+
+                                <a href="index.html#providers">
+                                        Providers
+                                </a>
+
+                                <a href="about.html">
+                                        About
+                                </a>
+
+                                <a href="blog.html">
+                                        Blog
+                                </a>
+
+                                <a href="contact.html" class="active">
+                                        Contact
+                                </a>
+
+                        </nav>
+
+
+                        <!-- Right Side -->
+
+                        <div class="nav-right">
+
+                                <button class="search-btn" onclick="focusContactForm()">
+                                        🔍
+                                </button>
+
+                                <button class="get-started" onclick="getStarted()">
+                                        Get Started
+                                </button>
+
+                        </div>
+
+
+                        <!-- Mobile Menu -->
+
+                        <button class="menu-btn" onclick="toggleMenu()">
+                                ☰
+                        </button>
+
+                </div>
+
+        </header>
+
+
+
+        <!-- =========================================
+         CONTACT HERO
+    ========================================= -->
+
+        <section class="contact-hero">
+
+                <div class="hero-text">
+
+                        <h1>
+                                Contact Us
+                        </h1>
+
+                        <p>
+                                We'd love to hear from you. Send us a message
+                                and our team will get back to you soon.
+                        </p>
+
+                </div>
+
+
+                <!--
+            HERO IMAGE
+
+            Apni image ka address yahan lagayen:
+
+            src="images/contact-hero.jpg"
+        -->
+
+                <div class="hero-image">
+
+                        <img src="" alt="Contact SkillConnect">
+
+                </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+         CONTACT SECTION
+    ========================================= -->
+
+        <main class="contact-container">
+
+
+                <div class="contact-grid">
+
+
+                        <!-- =====================================
+                 CONTACT INFORMATION
+            ====================================== -->
+
+                        <section class="contact-info">
+
+                                <div class="info-item">
+
+                                        <div class="info-icon">
+                                                📍
+                                        </div>
+
+                                        <div>
+
+                                                <h3>
+                                                        Location
+                                                </h3>
+
+                                                <p>
+                                                        Lahore, Pakistan
+                                                </p>
+
+                                        </div>
+
+                                </div>
+
+
+
+                                <div class="info-item">
+
+                                        <div class="info-icon">
+                                                ✉
+                                        </div>
+
+                                        <div>
+
+                                                <h3>
+                                                        Email
+                                                </h3>
+
+                                                <p>
+                                                        support@skillconnect.com
+                                                </p>
+
+                                        </div>
+
+                                </div>
+
+
+
+                                <div class="info-item">
+
+                                        <div class="info-icon">
+                                                📞
+                                        </div>
+
+                                        <div>
+
+                                                <h3>
+                                                        Phone
+                                                </h3>
+
+                                                <p>
+                                                        +92 300 0000007
+                                                </p>
+
+                                        </div>
+
+                                </div>
+
+
+
+                                <div class="info-item">
+
+                                        <div class="info-icon">
+                                                🕐
+                                        </div>
+
+                                        <div>
+
+                                                <h3>
+                                                        Working Hours
+                                                </h3>
+
+                                                <p>
+                                                        Mon - Sat, 9AM - 6PM
+                                                </p>
+
+                                        </div>
+
+                                </div>
+
+                        </section>
+
+
+
+                        <!-- =====================================
+                 CONTACT FORM
+            ====================================== -->
+
+                        <section class="contact-form-section">
+
+                                <h2>
+                                        Send us a Message
+                                </h2>
+
+                                <p class="form-intro">
+                                        Fill out the form below and we'll
+                                        get back to you shortly.
+                                </p>
+
+
+                                <form id="contactForm">
+
+
+                                        <!-- Name -->
+
+                                        <div class="form-group">
+
+                                                <label for="name">
+                                                        Your Name *
+                                                </label>
+
+                                                <input type="text" id="name" placeholder="Enter your name">
+
+                                                <small id="nameError"></small>
+
+                                        </div>
+
+
+
+                                        <!-- Email -->
+
+                                        <div class="form-group">
+
+                                                <label for="email">
+                                                        Email Address *
+                                                </label>
+
+                                                <input type="email" id="email" placeholder="Enter your email">
+
+                                                <small id="emailError"></small>
+
+                                        </div>
+
+
+
+                                        <!-- Message -->
+
+                                        <div class="form-group">
+
+                                                <label for="message">
+                                                        Message *
+                                                </label>
+
+                                                <textarea id="message" rows="5"
+                                                        placeholder="Type your message..."></textarea>
+
+                                                <small id="messageError"></small>
+
+                                        </div>
+
+
+
+                                        <!-- Submit -->
+
+                                        <button type="submit" class="send-btn">
+                                                Send Message
+                                        </button>
+
+
+                                        <!-- Success -->
+
+                                        <p id="successMessage" class="success-message"></p>
+
+                                </form>
+
+                        </section>
+
+                </div>
+
+
+
+                <!-- =========================================
+             MAP
+        ========================================= -->
+
+                <section class="map-section">
+
+                        <iframe src="https://www.google.com/maps?q=Lahore,Pakistan&output=embed" width="100%"
+                                height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+
+                        <div class="map-label">
+
+                                <span class="map-pin">
+                                        📍
+                                </span>
+
+                                <strong>
+                                        SkillConnect
+                                </strong>
+
+                                <span>
+                                        Lahore, Pakistan
+                                </span>
+
+                        </div>
+
+                </section>
+
+        </main>
+
+
+
+        <!-- =========================================
+         FOOTER
+    ========================================= -->
+
+        <footer class="main-footer">
+
+                <div class="footer-container">
+
+
+                        <!-- Brand -->
+
+                        <div class="footer-brand">
+
+                                <div class="footer-logo">
+
+                                        <span class="footer-icon">
+                                                ✕
+                                        </span>
+
+                                        <span>
+                                                SkillConnect
+                                        </span>
+
+                                </div>
+
+                                <p>
+                                        Your Trusted Digital Services Marketplace
+                                </p>
+
+                        </div>
+
+
+
+                        <!-- Quick Links -->
+
+                        <div class="footer-column">
+
+                                <h3>
+                                        Quick Links
+                                </h3>
+
+                                <a href="index.html">
+                                        Home
+                                </a>
+
+                                <a href="services.html">
+                                        Services
+                                </a>
+
+                                <a href="index.html#providers">
+                                        Providers
+                                </a>
+
+                                <a href="about.html">
+                                        About
+                                </a>
+
+                                <a href="blog.html">
+                                        Blog
+                                </a>
+
+                                <a href="contact.html">
+                                        Contact
+                                </a>
+
+                        </div>
+
+
+
+                        <!-- Services -->
+
+                        <div class="footer-column">
+
+                                <h3>
+                                        Services
+                                </h3>
+
+                                <a href="services.html">
+                                        Web Development
+                                </a>
+
+                                <a href="services.html">
+                                        Graphic Design
+                                </a>
+
+                                <a href="services.html">
+                                        UI/UX Design
+                                </a>
+
+                                <a href="services.html">
+                                        Digital Marketing
+                                </a>
+
+                                <a href="services.html">
+                                        Content Writing
+                                </a>
+
+                                <a href="services.html">
+                                        Python Development
+                                </a>
+
+                                <a href="services.html">
+                                        SEO
+                                </a>
+
+                        </div>
+
+
+
+                        <!-- Contact -->
+
+                        <div class="footer-column">
+
+                                <h3>
+                                        Contact Us
+                                </h3>
+
+                                <p>
+                                        📍 Lahore, Pakistan
+                                </p>
+
+                                <p>
+                                        📞 +92 300 0000007
+                                </p>
+
+                                <p>
+                                        ✉ support@skillconnect.com
+                                </p>
+
+                        </div>
+
+                </div>
+
+
+
+                <!-- Footer Bottom -->
+
+                <div class="footer-bottom">
+
+                        <p>
+                                © 2026 SkillConnect. All rights reserved.
+                        </p>
+
+                        <div>
+
+                                <a href="#">
+                                        Privacy Policy
+                                </a>
+
+                                <span>|</span>
+
+                                <a href="#">
+                                        Terms & Conditions
+                                </a>
+
+                        </div>
+
+                </div>
+
+        </footer>
+
+
+
+        <script src="contact.js"></script>
+
+</body>
+
+</html>
