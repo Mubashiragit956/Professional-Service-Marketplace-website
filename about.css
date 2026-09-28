@@ -391,22 +391,7 @@ body {
                 0 10px 25px rgba(35, 102, 180, .12);
 }
 
-
-/* Team Image */
-/* 
-.team-image {
-        width: 75px;
-        height: 75px;
-
-        border-radius: 50%;
-
-        object-fit: cover;
-
-        border: 3px solid #e2edff;
-
-        margin-bottom: 10px;
-} */
-.team-image {
+.about.png.jpg {
         width: 120px;
         height: 120px;
 
